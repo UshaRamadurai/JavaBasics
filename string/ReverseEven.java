@@ -1,12 +1,13 @@
 package week1.day2.string;
 
-/* Goal : Code to print only the odd words of a sentence in reverse order
+/* Goal : Code to print only the even words of a sentence in reverse order
  * input : "Welcome to the world of Testing"
  * output : "Welcome ot the dlrow of gnitseT "
+ * even words = odd index
  * Split the sentence into words and store in array
  * Traverse through the loop from 0 to string length -1 
- * check with condition to print the odd words in reverse
- * print the even words as such
+ * check with condition to print the odd indices(even word) in reverse
+ * print the odd words as such
  */
 public class ReverseEven {
 
@@ -22,13 +23,13 @@ public class ReverseEven {
 			
 				for (int j = splitInput[i].length() - 1; j >= 0; j--) { // Traverse in reverse iteration
 					
-					System.out.print(splitInput[i].charAt(j));          //printing odd words
+					System.out.print(splitInput[i].charAt(j));          //printing even words
 				}
 				System.out.print(" ");
 			}
 
 			else
-				System.out.print(splitInput[i] + " ");                // printing even words
+				System.out.print(splitInput[i] + " ");                // printing odd words
 		}
 	}
 }
