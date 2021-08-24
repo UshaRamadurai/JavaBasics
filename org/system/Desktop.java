@@ -1,4 +1,5 @@
 package org.system;
+//Goal : Code to achieve single inheritance
 
 public class Desktop extends Computer{
 	
