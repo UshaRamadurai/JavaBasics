@@ -1,4 +1,6 @@
 package org.student;
+//Goal : Code to achieve Multilevel Inheritance
+//Student extends Department, Department extends College
 
 import org.department.Department;
 
